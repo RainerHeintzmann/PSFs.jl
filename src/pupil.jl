@@ -146,7 +146,7 @@ function get_Zernike_normcoeff(index_style, j)
             error("Unknown Zernike sequential index")
         end
     end
-    return normalization(n,m) # The normalization of the Zernike toolbox is according to Thibos et al. - "Standards for Reporting the Optical Aberrations of Eyes"
+    return normalization(Int64(n),Int64(m)) # The normalization of the Zernike toolbox is according to Thibos et al. - "Standards for Reporting the Optical Aberrations of Eyes"
 end
 
 """
